@@ -61,6 +61,7 @@ python3 carla_apollo_bridge/carla_bridge/main.py
 
 
 
+![carla_apollo10 0_bridge](https://github.com/user-attachments/assets/1a922718-8bb7-4ddc-8738-7867506493ba)
 
 
 
