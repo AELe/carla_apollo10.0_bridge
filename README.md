@@ -30,6 +30,10 @@ export PYTHONPATH=$PYTHONPATH:/apollo_workspace/bazel-bin
 
 2.Install the dependencies required for carla_bridge
 
+cd carla_apollo10.0_bridge/carla_bridge
+
+pip3 install -r requirements.txt
+
 Execute the following commands within the Apollo container:
 
 pip3 install "numpy<2.0" -i https://pypi.tuna.tsinghua.edu.cn/simple
