@@ -49,7 +49,7 @@ https://github.com/carla-simulator/carla/releases
 
 Running Instructions:
 
-2.Inside the container, start the three Apollo modules: planning, prediction, and control.
+1.Inside the container, start the three Apollo modules: planning, prediction, and control.
 
 2.Outside the container, launch CarlaUE4 with the specified port:
 
