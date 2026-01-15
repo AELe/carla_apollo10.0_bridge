@@ -5,6 +5,8 @@ You can configure it by following the steps below:
 
 Prerequisite: A running Apollo Docker container must already be deployed
 
+clone the repository in the path apollo/modules
+
 
 1.Environment Variable Configuration
 
@@ -15,7 +17,7 @@ export PYTHONPATH=$PYTHONPATH/opt/apollo/neo/lib/cyber
 
 export PYTHONPATH=$PYTHONPATH:/opt/apollo/neo/lib/cyber/python/internal
 
-export PYTHONPATH=$PYTHONPATH:/apollo_workspace/modules/carla_apollo_bridge
+export PYTHONPATH=$PYTHONPATH:/apollo_workspace/modules/carla_apollo10.0_bridge
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/apollo/neo/lib
 
@@ -40,7 +42,7 @@ pip3 install "numpy<2.0" -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip3 install carla==0.9.15 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-pip3 install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip3 install "opencv-python<4.10" -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 3.Download CARLA_0.9.15.tar.gz
@@ -49,7 +51,8 @@ https://github.com/carla-simulator/carla/releases
 
 Running Instructions:
 
-1.Inside the container, start the three Apollo modules: planning, prediction, and control.
+1.Inside the container, compile data modules
+start the three Apollo modules: planning, prediction, and control.
 
 2.Outside the container, launch CarlaUE4 with the specified port:
 
@@ -57,7 +60,7 @@ Running Instructions:
 
 3.Inside the container, start the carla_bridge:
 
-python3 carla_apollo_bridge/carla_bridge/main.py
+python3 carla_apollo10.0_bridge/carla_bridge/main.py
 
 
 
