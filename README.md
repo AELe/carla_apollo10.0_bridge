@@ -34,6 +34,8 @@ export PYTHONPATH=$PYTHONPATH:/apollo_workspace/bazel-bin
 
 cd carla_apollo10.0_bridge/carla_bridge
 
+
+cp -r map/. /apollo/modules/map/data
 pip3 install -r requirements.txt
 
 Execute the following commands within the Apollo container:
